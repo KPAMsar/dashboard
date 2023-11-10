@@ -5,12 +5,14 @@ import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { UpAndDownGraph } from "../components/UpAndDownGraph";
 import { FiTruck } from "react-icons/fi";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
-import { useState } from "react";
+import { useMiniSidebarContext } from "../layout/DashboardLayout";
 
 const Dashboard = () => {
-  const [toggleSmallBar, setToggleSmallBar] = useState(false);
+  const { activeMinisidebar, setActiveMinisidebar } = useMiniSidebarContext();
+
+  console.log(activeMinisidebar);
   const handleTggle = () => {
-    setToggleSmallBar(!toggleSmallBar);
+    setActiveMinisidebar(!activeMinisidebar);
   };
   return (
     <>
@@ -21,8 +23,12 @@ const Dashboard = () => {
               className="rounded-[30px] bg-[blue]  p-3"
               onClick={handleTggle}
             >
-              {toggleSmallBar && <HiChevronLeft style={{ color: "white" }} />}
-              {!toggleSmallBar && <HiChevronRight style={{ color: "white" }} />}
+              {activeMinisidebar && (
+                <HiChevronLeft style={{ color: "white" }} />
+              )}
+              {!activeMinisidebar && (
+                <HiChevronRight style={{ color: "white" }} />
+              )}
             </div>
             <p className="font-[700] text-black text-[20px] ">
               Buyer Analytics Overview
