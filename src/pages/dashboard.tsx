@@ -16,7 +16,7 @@ const Dashboard = () => {
   };
   return (
     <>
-      <div className="flex justify-between ">
+      <div className="flex justify-between  ">
         <div className=" flex flex-col xs:justify-center md:gap-4 lg:gap-4  ">
           <div className="flex gap-2 items-center">
             <div
@@ -34,8 +34,10 @@ const Dashboard = () => {
               Buyer Analytics Overview
             </p>
           </div>
-          <div className=" xs:flex-col  md:flex   gap-[2rem] md:gap-[1rem] lg:gap[2rem]">
-            <div className="card bg-white shadow-md p-5 w-[100dvw]  overflow-hidden md:w-[350px] lg:w-[400px] ">
+          <div className=" xs:flex-col  xs:pb-[4px] md:flex   gap-[2rem] md:gap-[1rem] lg:gap[2rem]">
+            <div
+              className={`card bg-white shadow-md p-5 w-[100dvw]  overflow-hidden md:w-[350px] lg:w-[400px]  `}
+            >
               <div className="flex flex-col gap-3 ">
                 <div className="flex justify-between items-center ">
                   <div className="rounded-[30px] bg-[#ECEEFE]  p-4 ">

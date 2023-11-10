@@ -29,7 +29,9 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
           {activeMinisidebar && (
             <div
               className={`lg:block transform ${
-                activeMinisidebar ? "translate-x-0" : "-translate-x-full"
+                activeMinisidebar
+                  ? "translate-x-0 xs:z-20"
+                  : "-translate-x-full"
               } transition-transform ${activeMinisidebar ? "block" : "hidden"}`}
             >
               <MiniSidebar />
