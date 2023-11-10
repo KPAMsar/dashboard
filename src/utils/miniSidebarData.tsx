@@ -1,4 +1,4 @@
-import React from "react";
+import { PiNewspaperClippingDuotone } from "react-icons/pi";
 import {
   FiHome,
   FiShoppingCart,
@@ -6,7 +6,6 @@ import {
   FiFileText,
   FiTruck,
 } from "react-icons/fi";
-import { PiNewspaperClippingDuotone } from "react-icons/pi";
 import { CgProfile } from "react-icons/cg";
 
 const data = [
