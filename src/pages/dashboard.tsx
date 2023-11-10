@@ -14,8 +14,8 @@ const Dashboard = () => {
   };
   return (
     <>
-      <div className="flex justify-between">
-        <div className=" flex flex-col gap-4">
+      <div className="flex justify-between ">
+        <div className=" flex flex-col xs:justify-center md:gap-4 lg:gap-4  ">
           <div className="flex gap-2 items-center">
             <div
               className="rounded-[30px] bg-[blue]  p-3"
@@ -28,9 +28,9 @@ const Dashboard = () => {
               Buyer Analytics Overview
             </p>
           </div>
-          <div className="flex gap-[2rem] md:gap-[1rem] lg:gap[2rem]">
-            <div className="card bg-white shadow-md p-5 w-[400px] md:w-[350px]lg:w-[400px]">
-              <div className="flex flex-col gap-3">
+          <div className=" xs:flex-col  md:flex   gap-[2rem] md:gap-[1rem] lg:gap[2rem]">
+            <div className="card bg-white shadow-md p-5 w-[100dvw]  overflow-hidden md:w-[350px] lg:w-[400px] ">
+              <div className="flex flex-col gap-3 ">
                 <div className="flex justify-between items-center ">
                   <div className="rounded-[30px] bg-[#ECEEFE]  p-4 ">
                     <BsCurrencyDollar />
@@ -61,9 +61,9 @@ const Dashboard = () => {
             </div>
 
             {/* SECOND ROW */}
-            <div className="flex gap-[2rem] md:gap-[1rem] lg:gap-[2rem]">
-              <div className="flex flex-col gap-[2rem] md:gap-[1rem] lg:gap-[2rem]">
-                <div className="card bg-white flex flex-col gap-[1.5rem] shadow-md p-5 w-[300px] md:w-[200px] lg:w-[300px] h-[200px] justify-start">
+            <div className="xs:flex  md:flex gap-[2rem] md:gap-[1rem] lg:gap-[2rem] xs:justify-center ">
+              <div className="flex flex-col gap-[2rem] md:gap-[1rem] lg:gap-[2rem] xs:w-full ">
+                <div className="card bg-white flex flex-col gap-[1.5rem] shadow-md p-5 w-[300px] md:w-[200px] lg:w-[300px] h-[200px] justify-start ">
                   <div className="flex justify-between items-center ">
                     <div className="rounded-[30px] bg-[#ECEEFE]  p-4 ">
                       <BsCurrencyDollar style={{ color: "blue" }} />
@@ -83,7 +83,8 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
-                <div className="card bg-white flex flex-col gap-[1.5rem] shadow-md p-5 w-[300px] h-[200px] justify-start md:w-[200px] md:gap-[1rem] lg:w-[300px]">
+
+                <div className="card bg-white flex flex-col gap-[1.5rem] shadow-md p-5 w-[300px] h-[200px] justify-start md:w-[200px] md:gap-[1rem] lg:w-[300px]  xs:gap-3">
                   <div className="flex justify-between items-center ">
                     <div className="rounded-[30px] bg-[#ECEEFE]  p-4 ">
                       <BsCurrencyDollar style={{ color: "blue" }} />
@@ -104,6 +105,7 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
+
               <div className="flex flex-col gap-[2rem] md:gap-[1rem] lg:gap-[2rem]">
                 <div className="card bg-white flex flex-col gap-[1.5rem] shadow-md p-5 w-[300px] h-[200px] justify-start md:w-[200px] md:gap-[1rem] lg:w-[300px]">
                   <div className="flex justify-between items-center ">
@@ -125,6 +127,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="card bg-white flex flex-col gap-[1.5rem] shadow-md p-5 w-[300px] h-[200px] justify-start md:w-[200px] lg:w-[300px]">
                   <div className="flex justify-between items-center ">
                     <div className="rounded-[30px] bg-[#ECEEFE]  p-4 ">
@@ -151,8 +154,8 @@ const Dashboard = () => {
 
           {/* Second col for graphs */}
 
-          <div className="flex justify-between gap-1">
-            <div className="card bg-white shadow-md p-5 w-1/2">
+          <div className="xs:flex-col  md:flex md:justify-between md:gap-1 xs:gap-4  ">
+            <div className="card bg-white shadow-md p-5 xs:w-[100dvw] md:w-1/2">
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between items-center ">
                   <div className="rounded-[30px] bg-[#ECEEFE]  p-4 ">
@@ -178,7 +181,7 @@ const Dashboard = () => {
                 <UpAndDownGraph />
               </div>
             </div>
-            <div className="card bg-white shadow-md p-5 w-1/2">
+            <div className="card bg-white shadow-md p-5 xs:w-[100dvw] md:w-1/2">
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between items-center ">
                   <div className="rounded-[30px] bg-[#ECEEFE]  p-4 ">
