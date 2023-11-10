@@ -4,7 +4,6 @@ import {
   FiShoppingCart,
   FiBox,
   FiFileText,
-  FiMenu,
   FiTruck,
 } from "react-icons/fi";
 import { PiNewspaperClippingDuotone } from "react-icons/pi";

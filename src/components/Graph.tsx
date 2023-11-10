@@ -52,7 +52,11 @@ const data = [
   },
 ];
 
-const Graph = ({ height }) => {
+interface GraphProps {
+  height?: number;
+}
+
+const Graph: React.FC<GraphProps> = ({ height }) => {
   return (
     <div className="w-full h-full mt-5">
       <ResponsiveContainer width="99%" height={height || 250}>
