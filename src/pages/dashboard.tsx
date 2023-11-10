@@ -18,9 +18,11 @@ const Dashboard = () => {
     <>
       <div className="flex md:justify-between  xs: justify-center">
         <div className=" flex flex-col xs:justify-center md:gap-4 lg:gap-4  ">
-          <div className="flex gap-2 items-center ">
+          <div className="flex gap-2 items-center  ">
             <div
-              className="rounded-[30px] bg-[blue]  p-3"
+              className={`rounded-[30px] bg-[blue]  p-3  ${
+                activeMinisidebar ? ` fixed right-2` : ""
+              } `}
               onClick={handleTggle}
             >
               {activeMinisidebar && (
