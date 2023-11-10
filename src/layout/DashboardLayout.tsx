@@ -8,9 +8,12 @@ const DashboardLayout = ({ children }) => {
       <Navbar />
       <div className="flex pt-[70px] overflow-hidden main_bg">
         <AsideNav />
-        <MiniSidebar />
-        <main className="relative w-full h-screen overflow-y-auto lg:ml-20 px-4 pt-6 overflow-bar">
-          {children}
+
+        <main className="flex  relative w-full h-screen overflow-y-auto lg:ml-20 -bar pt-1 ">
+          <MiniSidebar />
+          <div className="px-4 pt-6 overflow relative w-full h-screen overflow-y-auto lg:ml-20 -bar ">
+            {children}
+          </div>
         </main>
       </div>
     </div>
