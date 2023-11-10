@@ -4,16 +4,25 @@ import { HiOutlineChevronDown } from "react-icons/hi";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { UpAndDownGraph } from "../components/UpAndDownGraph";
 import { FiTruck } from "react-icons/fi";
-import { HiChevronLeft } from "react-icons/hi2";
+import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
+import { useState } from "react";
 
 const Dashboard = () => {
+  const [toggleSmallBar, setToggleSmallBar] = useState(false);
+  const handleTggle = () => {
+    setToggleSmallBar(!toggleSmallBar);
+  };
   return (
     <>
       <div className="flex justify-between">
         <div className=" flex flex-col gap-4">
           <div className="flex gap-2 items-center">
-            <div className="rounded-[30px] bg-[blue]  p-3">
-              <HiChevronLeft style={{ color: "white" }} />
+            <div
+              className="rounded-[30px] bg-[blue]  p-3"
+              onClick={handleTggle}
+            >
+              {toggleSmallBar && <HiChevronLeft style={{ color: "white" }} />}
+              {!toggleSmallBar && <HiChevronRight style={{ color: "white" }} />}
             </div>
             <p className="font-[700] text-black text-[20px] ">
               Buyer Analytics Overview

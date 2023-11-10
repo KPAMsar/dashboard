@@ -1,8 +1,13 @@
+import React, { ReactNode } from "react";
 import Navbar from "../components/Navbar";
 import AsideNav from "../components/AsideNav";
 import MiniSidebar from "../components/MiniSidebar";
 
-const DashboardLayout = ({ children }) => {
+interface DashboardLayoutProps {
+  children: ReactNode;
+}
+
+const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   return (
     <div>
       <Navbar />
@@ -10,7 +15,9 @@ const DashboardLayout = ({ children }) => {
         <AsideNav />
 
         <main className="flex  relative w-full h-screen overflow-y-auto lg:ml-20 -bar pt-1 ">
-          <MiniSidebar />
+          <div className="hidden lg:block">
+            <MiniSidebar />
+          </div>
           <div className="px-4 pt-6 overflow relative w-full h-screen overflow-y-auto lg:ml-20 -bar ">
             {children}
           </div>
