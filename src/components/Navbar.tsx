@@ -1,5 +1,5 @@
 import { Dialog } from "@headlessui/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiBars3 } from "react-icons/hi2";
 

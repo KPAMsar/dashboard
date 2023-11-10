@@ -1,24 +1,17 @@
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import DashboardLayout from "./layout/DashboardLayout";
-import {
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from "react-router-dom";
 import Dashboard from "./pages/dashboard";
 
 function App() {
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path="/" element={<Dashboard children={undefined} />} />
-    )
-  );
-
   return (
-    <DashboardLayout>
-      <RouterProvider router={router} />
-    </DashboardLayout>
+    <Router>
+      <DashboardLayout>
+        <Routes>
+          <Route path="/" element={<Dashboard children={undefined} />} />
+        </Routes>
+      </DashboardLayout>
+    </Router>
   );
 }
 

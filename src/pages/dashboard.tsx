@@ -1,4 +1,3 @@
-import MiniSidebar from "../components/MiniSidebar";
 import Graph from "../components/Graph";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { HiOutlineChevronDown } from "react-icons/hi";
@@ -11,9 +10,6 @@ const Dashboard = () => {
   return (
     <>
       <div className="flex justify-between">
-        {/* <div className="md:flex md:flex-col  hidden  lg:flex-row">
-          <MiniSidebar />
-        </div> */}
         <div className=" flex flex-col gap-4">
           <div className="flex gap-2 items-center">
             <div className="rounded-[30px] bg-[blue]  p-3">
