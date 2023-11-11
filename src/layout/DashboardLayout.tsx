@@ -38,7 +38,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
             </div>
           )}
           <div
-            className={`px-4 pt-6 overflow relative w-full h-screen overflow-y-auto lg:ml-20 -bar  ${
+            className={`xs:px-0 xs:pt-1 md:px-4 md:pt-6 overflow relative w-full h-screen overflow-y-auto lg:ml-20 -bar  ${
               activeMinisidebar ? "w-[100dvw]" : "0px"
             }`}
           >
